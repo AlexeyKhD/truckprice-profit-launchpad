@@ -33,7 +33,7 @@ const Hero = () => {
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div>
               <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
-                <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-tenchat-red">TenChat</span></span>
+                <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-tenchat-red">Truck-Price</span></span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                 Станьте партнёром <span className="text-tenchat-red">Truck-Price</span>
