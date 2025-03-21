@@ -143,7 +143,7 @@ const RewardSystem = () => {
             inView ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`} style={{ transitionDelay: "600ms" }}>
             <p className="text-xl text-white/80 mb-4">
-              Партнеры TenChat в среднем зарабатывают
+              Партнеры Truck-Price в среднем зарабатывают
             </p>
             <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-tenchat-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move">
               {inView ? <AnimatedCounter end={320000} suffix=" ₽" className="bg-gradient-to-r from-white via-tenchat-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move" /> : "0 ₽"}

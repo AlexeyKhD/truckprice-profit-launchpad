@@ -129,7 +129,7 @@ const PlatformAdvantages = () => {
             <div className="glass-card rounded-xl p-8 border border-white/10 relative overflow-hidden">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-tenchat-red/20 rounded-full filter blur-[60px]"></div>
               
-              <h3 className="text-2xl font-bold text-white mb-6">Начните зарабатывать с TenChat уже сегодня</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Начните зарабатывать с Truck-Price уже сегодня</h3>
               
               <p className="text-white/70 mb-8">
                 Присоединяйтесь к партнерской программе и получите доступ ко всем преимуществам платформы:
