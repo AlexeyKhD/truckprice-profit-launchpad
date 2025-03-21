@@ -1,10 +1,13 @@
 
 import { cn } from "@/lib/utils";
-import { ButtonProps } from "@/components/ui/button";
+import { ButtonProps as ShadcnButtonProps } from "@/components/ui/button";
 import { forwardRef } from "react";
 
-type CustomButtonProps = ButtonProps & {
-  variant?: "primary" | "secondary" | "outline" | "accent" | "ghost";
+// Define our custom variants type that includes all the variants we're using
+export type CustomButtonVariant = "primary" | "secondary" | "outline" | "accent" | "ghost";
+
+type CustomButtonProps = Omit<ShadcnButtonProps, "variant"> & {
+  variant?: CustomButtonVariant;
   glowing?: boolean;
   withArrow?: boolean;
 };
