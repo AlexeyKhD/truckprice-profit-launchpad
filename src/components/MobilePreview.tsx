@@ -1,7 +1,5 @@
-
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
-
 const MobilePreview = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState({
@@ -9,10 +7,8 @@ const MobilePreview = () => {
     deals: 0,
     clients: 0
   });
-
   useEffect(() => {
     setIsVisible(true);
-    
     const timer = setTimeout(() => {
       const interval = setInterval(() => {
         setCounters(prev => ({
@@ -21,15 +17,11 @@ const MobilePreview = () => {
           clients: prev.clients < 74 ? prev.clients + 2 : prev.clients
         }));
       }, 100);
-      
       return () => clearInterval(interval);
     }, 500);
-    
     return () => clearTimeout(timer);
   }, []);
-
-  return (
-    <div className={`app-mockup w-72 h-[600px] bg-black border-[14px] border-black rounded-[40px] mx-auto relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
+  return <div className={`app-mockup w-72 h-[600px] bg-black border-[14px] border-black rounded-[40px] mx-auto relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
       {/* Phone details */}
       <div className="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-xl z-20"></div>
       
@@ -50,7 +42,7 @@ const MobilePreview = () => {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h3 className="text-lg font-bold text-white">
-              <span className="text-tenchat-red">Ten</span>Chat
+              <span className="text-tenchat-red">Truck</span>Chat
             </h3>
             <p className="text-xs text-white/60">Партнерская программа</p>
           </div>
@@ -119,24 +111,20 @@ const MobilePreview = () => {
         </div>
 
         {/* Floating Notifications */}
-        <div 
-          className="app-notification top-20 -right-20 z-20"
-          style={{ "--delay": "0.3" } as React.CSSProperties}
-        >
+        <div className="app-notification top-20 -right-20 z-20" style={{
+        "--delay": "0.3"
+      } as React.CSSProperties}>
           <DollarSign size={12} className="text-tenchat-green" />
           <span>Новый платеж +48 000 ₽</span>
         </div>
         
-        <div 
-          className="app-notification bottom-32 -left-24 z-20"
-          style={{ "--delay": "1.5" } as React.CSSProperties}
-        >
+        <div className="app-notification bottom-32 -left-24 z-20" style={{
+        "--delay": "1.5"
+      } as React.CSSProperties}>
           <User size={12} className="text-tenchat-red" />
           <span>Новый клиент привлечен</span>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default MobilePreview;
