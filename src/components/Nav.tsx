@@ -16,7 +16,7 @@ const Nav = () => {
         <a href="#" className="relative z-10">
           <div className="text-2xl font-bold text-white">
             <span className="text-tenchat-red font-display">Truck</span>
-            <span className="font-display">Price</span>
+            <span className="font-display">-Price</span>
           </div>
         </a>
 
