@@ -39,7 +39,7 @@ const Hero = () => {
                 Станьте партнёром <span className="text-tenchat-red">Truck-Price</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-                Превращайте свои связи в доход до <span className="font-bold text-white">120 000 ₽</span> за сделку
+                Зарабатывайте от <span className="font-bold text-white">125 000 ₽</span> за сделку, объединяя людей и грузовую технику без вложений и рисков
               </p>
             </div>
 
@@ -53,13 +53,13 @@ const Hero = () => {
             </div>
 
             <div className="pt-4">
-              <p className="text-sm text-white/60 mb-3">Нам доверяют партнеры:</p>
+              <p className="text-sm text-white/60 mb-3">Нам доверяют:</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">Brand<span className="text-tenchat-red">One</span></div>
+                  <div className="text-white font-medium">ГК<span className="text-tenchat-red">Автомобильность</span></div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">Smart<span className="text-tenchat-red">Tech</span></div>
+                  <div className="text-white font-medium">Сколково<span className="text-tenchat-red">Tech</span></div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
                   <div className="text-white font-medium">Future<span className="text-tenchat-red">Pro</span></div>
