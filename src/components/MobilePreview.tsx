@@ -1,5 +1,7 @@
+
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
+
 const MobilePreview = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState({
@@ -7,6 +9,7 @@ const MobilePreview = () => {
     deals: 0,
     clients: 0
   });
+
   useEffect(() => {
     setIsVisible(true);
     const timer = setTimeout(() => {
@@ -21,6 +24,7 @@ const MobilePreview = () => {
     }, 500);
     return () => clearTimeout(timer);
   }, []);
+
   return <div className={`app-mockup w-72 h-[600px] bg-black border-[14px] border-black rounded-[40px] mx-auto relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
       {/* Phone details */}
       <div className="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-xl z-20"></div>
@@ -113,12 +117,12 @@ const MobilePreview = () => {
         {/* Floating Notifications */}
         <div style={{
         "--delay": "0.3"
-      } as React.CSSProperties} className="app-notification top-20 right-2 z-20 mx-0">
+      } as React.CSSProperties} className="app-notification top-20 -right-[70%] z-20">
           <DollarSign size={12} className="text-tenchat-green" />
           <span>Новый платеж +48 000 ₽</span>
         </div>
         
-        <div className="app-notification bottom-32 left-2 z-20" style={{
+        <div className="app-notification bottom-32 -left-[70%] z-20" style={{
         "--delay": "1.5"
       } as React.CSSProperties}>
           <User size={12} className="text-tenchat-red" />
@@ -127,4 +131,5 @@ const MobilePreview = () => {
       </div>
     </div>;
 };
+
 export default MobilePreview;
