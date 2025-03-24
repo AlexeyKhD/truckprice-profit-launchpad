@@ -11,8 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="text-2xl font-bold text-white mb-4">
-              <span className="text-tenchat-red font-display">Truck</span>
-              <span className="font-display">Price</span>
+              <span className="text-tenchat-red font-display">Truck</span>-Price
             </div>
             <p className="text-white/60 max-w-xs">Ведущая платформа для агентов и брокеров в сфере продаж коммерческого транспорта</p>
           </div>
@@ -53,8 +52,8 @@ const Footer = () => {
               <h3 className="font-medium text-white mb-4">Контакты</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="mailto:partners@tenchat.ru" className="text-white/60 hover:text-white transition">
-                    partners@tenchat.ru
+                  <a href="mailto:partners@truck-price.ru" className="text-white/60 hover:text-white transition">
+                    partners@truck-price.ru
                   </a>
                 </li>
                 <li>
@@ -93,7 +92,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} TenChat. Все права защищены
+            © {new Date().getFullYear()} Truck-Price. Все права защищены
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="text-white/60 hover:text-white transition">

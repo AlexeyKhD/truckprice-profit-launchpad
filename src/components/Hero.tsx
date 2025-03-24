@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
                 <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-tenchat-red">Truck-Price</span></span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Станьте партнёром <span className="text-tenchat-red">Truck-Price</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 leading-relaxed">

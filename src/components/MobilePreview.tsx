@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -49,7 +48,7 @@ const MobilePreview = () => {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h3 className="text-lg font-bold text-white">
-                <span className="text-tenchat-red">Truck</span>Chat
+                <span className="text-tenchat-red">Truck</span>-Price
               </h3>
               <p className="text-xs text-white/60">Партнерская программа</p>
             </div>
