@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="text-2xl font-bold text-white mb-4">
-              <span className="text-tenchat-red font-display">Truck</span>-Price
+              <span className="text-truckprice-red font-display">Truck</span>-Price
             </div>
             <p className="text-white/60 max-w-xs">Ведущая платформа для агентов и брокеров в сфере продаж коммерческого транспорта</p>
           </div>
@@ -119,7 +119,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <button onClick={scrollToTop} className="absolute right-6 bottom-6 p-3 bg-tenchat-red rounded-full text-white shadow-lg hover:bg-tenchat-red/90 transition-all hover:scale-110" aria-label="Scroll to top">
+      <button onClick={scrollToTop} className="absolute right-6 bottom-6 p-3 bg-truckprice-red rounded-full text-white shadow-lg hover:bg-truckprice-red/90 transition-all hover:scale-110" aria-label="Scroll to top">
         <ArrowUp size={20} />
       </button>
     </footer>;

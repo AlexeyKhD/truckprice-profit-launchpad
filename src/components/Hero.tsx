@@ -18,12 +18,12 @@ const Hero = () => {
   };
   return <section className="relative min-h-screen pt-24 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-tenchat-darkgray to-tenchat-darkgray -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-truckprice-darkgray to-truckprice-darkgray -z-10"></div>
       
       {/* Animated particles/dots */}
       <div className="absolute inset-0 overflow-hidden -z-5">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-tenchat-red/30 rounded-full filter blur-[150px] animate-pulse-light"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-tenchat-red/20 rounded-full filter blur-[120px] animate-pulse-light" style={{
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-truckprice-red/30 rounded-full filter blur-[150px] animate-pulse-light"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-truckprice-red/20 rounded-full filter blur-[120px] animate-pulse-light" style={{
         animationDelay: "1s"
       }}></div>
       </div>
@@ -33,10 +33,10 @@ const Hero = () => {
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div>
               <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
-                <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-tenchat-red">Truck-Price</span></span>
+                <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-truckprice-red">Truck-Price</span></span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                Станьте партнёром <span className="text-tenchat-red">Truck-Price</span>
+                Станьте партнёром <span className="text-truckprice-red">Truck-Price</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
                 Зарабатывайте от <span className="font-bold text-white">125 000 ₽</span> за сделку, объединяя людей и грузовую технику без вложений и рисков
@@ -56,12 +56,11 @@ const Hero = () => {
               <p className="text-sm text-white/60 mb-3">Нам доверяют:</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">ГК<span className="text-tenchat-red">Автомобильность</span></div>
+                  <div className="text-white font-medium">ГК<span className="text-truckprice-red">ТракАвто</span></div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">Сколково<span className="text-tenchat-red">Tech</span></div>
+                  <div className="text-white font-medium">Авто<span className="text-truckprice-red">Дилер</span></div>
                 </div>
-                
               </div>
             </div>
           </div>

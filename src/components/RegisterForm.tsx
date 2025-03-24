@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "./ui-extensions/Button";
 import { CheckCircle2, Mail, Phone, User } from "lucide-react";
@@ -60,7 +59,7 @@ const RegisterForm = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-tenchat-red focus:border-tenchat-red block w-full pl-10 p-3"
+                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-truckprice-red focus:border-truckprice-red block w-full pl-10 p-3"
                       placeholder="Иван Иванов"
                     />
                   </div>
@@ -81,7 +80,7 @@ const RegisterForm = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-tenchat-red focus:border-tenchat-red block w-full pl-10 p-3"
+                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-truckprice-red focus:border-truckprice-red block w-full pl-10 p-3"
                       placeholder="example@mail.com"
                     />
                   </div>
@@ -116,7 +115,7 @@ const RegisterForm = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-tenchat-red focus:border-tenchat-red block w-full pl-10 p-3"
+                      className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-truckprice-red focus:border-truckprice-red block w-full pl-10 p-3"
                       placeholder="+7 (999) 123-45-67"
                     />
                   </div>
@@ -132,7 +131,7 @@ const RegisterForm = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-tenchat-red focus:border-tenchat-red block w-full p-3"
+                    className="bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-lg focus:ring-truckprice-red focus:border-truckprice-red block w-full p-3"
                     placeholder="Название компании"
                   />
                 </div>
@@ -146,16 +145,16 @@ const RegisterForm = () => {
                       checked={formData.agreeTerms}
                       onChange={handleInputChange}
                       required
-                      className="w-4 h-4 accent-tenchat-red rounded"
+                      className="w-4 h-4 accent-truckprice-red rounded"
                     />
                   </div>
                   <label htmlFor="agreeTerms" className="ml-2 text-sm text-white/60">
                     Я согласен с{" "}
-                    <a href="#" className="text-tenchat-red hover:underline">
+                    <a href="#" className="text-truckprice-red hover:underline">
                       условиями использования
                     </a>{" "}
                     и{" "}
-                    <a href="#" className="text-tenchat-red hover:underline">
+                    <a href="#" className="text-truckprice-red hover:underline">
                       политикой конфиденциальности
                     </a>
                   </label>
@@ -187,8 +186,8 @@ const RegisterForm = () => {
         </form>
       ) : (
         <div className="text-center py-8">
-          <div className="w-20 h-20 bg-tenchat-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle2 size={40} className="text-tenchat-green" />
+          <div className="w-20 h-20 bg-truckprice-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle2 size={40} className="text-truckprice-green" />
           </div>
           <h3 className="text-2xl font-bold text-white mb-2">Регистрация завершена!</h3>
           <p className="text-white/60 mb-6">

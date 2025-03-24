@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { UserPlus, Users, DollarSign } from "lucide-react";
 
@@ -45,7 +44,7 @@ const HowItWorks = () => {
 
   return (
     <section id="how-it-works" ref={sectionRef} className="py-20 md:py-28 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-tenchat-darkgray to-black -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-truckprice-darkgray to-black -z-10"></div>
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -72,7 +71,7 @@ const HowItWorks = () => {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div className="glass-card rounded-xl p-8 h-full flex flex-col items-center text-center">
-                <div className="w-16 h-16 flex items-center justify-center mb-4 text-tenchat-red bg-tenchat-red/10 rounded-full">
+                <div className="w-16 h-16 flex items-center justify-center mb-4 text-truckprice-red bg-truckprice-red/10 rounded-full">
                   {step.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>

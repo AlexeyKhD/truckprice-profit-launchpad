@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -29,7 +28,7 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				tenchat: {
+				truckprice: {
 					black: '#000000',
 					red: '#FF0000',
 					darkgray: '#1E1E1E',

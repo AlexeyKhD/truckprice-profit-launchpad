@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { Zap, Clock, TrendingUp } from "lucide-react";
@@ -31,7 +30,7 @@ const RewardSystem = () => {
       <div className="absolute inset-0 bg-black -z-10"></div>
       
       {/* Glow effect */}
-      <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-tenchat-red/20 rounded-full filter blur-[150px] animate-pulse-light -z-5"></div>
+      <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-truckprice-red/20 rounded-full filter blur-[150px] animate-pulse-light -z-5"></div>
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -53,7 +52,7 @@ const RewardSystem = () => {
             }`}
           >
             <div className="glass-card rounded-xl p-8 h-full border border-white/5 hover:border-white/20 transition-all duration-300">
-              <div className="w-12 h-12 flex items-center justify-center mb-6 text-tenchat-red bg-tenchat-red/10 rounded-lg">
+              <div className="w-12 h-12 flex items-center justify-center mb-6 text-truckprice-red bg-truckprice-red/10 rounded-lg">
                 <Zap size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Моментальный доход</h3>
@@ -83,7 +82,7 @@ const RewardSystem = () => {
             }`}
           >
             <div className="glass-card rounded-xl p-8 h-full border border-white/5 hover:border-white/20 transition-all duration-300">
-              <div className="w-12 h-12 flex items-center justify-center mb-6 text-tenchat-green bg-tenchat-green/10 rounded-lg">
+              <div className="w-12 h-12 flex items-center justify-center mb-6 text-truckprice-green bg-truckprice-green/10 rounded-lg">
                 <Clock size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Гарантированные выплаты</h3>
@@ -113,7 +112,7 @@ const RewardSystem = () => {
             }`}
           >
             <div className="glass-card rounded-xl p-8 h-full border border-white/5 hover:border-white/20 transition-all duration-300">
-              <div className="w-12 h-12 flex items-center justify-center mb-6 text-tenchat-red bg-tenchat-red/10 rounded-lg">
+              <div className="w-12 h-12 flex items-center justify-center mb-6 text-truckprice-red bg-truckprice-red/10 rounded-lg">
                 <TrendingUp size={24} />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Бонусы за активность</h3>
@@ -145,8 +144,8 @@ const RewardSystem = () => {
             <p className="text-xl text-white/80 mb-4">
               Партнеры Truck-Price в среднем зарабатывают
             </p>
-            <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-tenchat-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move">
-              {inView ? <AnimatedCounter end={320000} suffix=" ₽" className="bg-gradient-to-r from-white via-tenchat-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move" /> : "0 ₽"}
+            <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-truckprice-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move">
+              {inView ? <AnimatedCounter end={320000} suffix=" ₽" className="bg-gradient-to-r from-white via-truckprice-red to-white bg-clip-text text-transparent bg-200% animate-gradient-move" /> : "0 ₽"}
               <span className="text-white text-2xl md:text-3xl font-normal ml-2">в месяц</span>
             </p>
           </div>

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { LayoutDashboard, ListChecks, HelpCircle } from "lucide-react";
 import { Button } from "./ui-extensions/Button";
@@ -72,7 +71,7 @@ const PlatformAdvantages = () => {
 
   return (
     <section id="advantages" ref={sectionRef} className="py-20 md:py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-tenchat-darkgray -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-truckprice-darkgray -z-10"></div>
       
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -94,12 +93,12 @@ const PlatformAdvantages = () => {
                 <div 
                   key={index}
                   className={`feature-card cursor-pointer transition-all duration-500 ${
-                    activeFeature === index ? 'border-tenchat-red/50 bg-gradient-to-br from-black/80 to-tenchat-red/10' : ''
+                    activeFeature === index ? 'border-truckprice-red/50 bg-gradient-to-br from-black/80 to-truckprice-red/10' : ''
                   }`}
                   onClick={() => setActiveFeature(index)}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`feature-icon ${activeFeature === index ? 'text-tenchat-red' : ''}`}>
+                    <div className={`feature-icon ${activeFeature === index ? 'text-truckprice-red' : ''}`}>
                       {feature.icon}
                     </div>
                     <div>
@@ -112,7 +111,7 @@ const PlatformAdvantages = () => {
                         <ul className="space-y-1">
                           {feature.details.map((detail, i) => (
                             <li key={i} className="flex items-center gap-2 text-white/80">
-                              <span className="w-1.5 h-1.5 bg-tenchat-red rounded-full"></span>
+                              <span className="w-1.5 h-1.5 bg-truckprice-red rounded-full"></span>
                               {detail}
                             </li>
                           ))}
@@ -127,7 +126,7 @@ const PlatformAdvantages = () => {
 
           <div className={`transition-all duration-1000 delay-300 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
             <div className="glass-card rounded-xl p-8 border border-white/10 relative overflow-hidden">
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-tenchat-red/20 rounded-full filter blur-[60px]"></div>
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-truckprice-red/20 rounded-full filter blur-[60px]"></div>
               
               <h3 className="text-2xl font-bold text-white mb-6">Начните зарабатывать с Truck-Price уже сегодня</h3>
               
@@ -137,7 +136,7 @@ const PlatformAdvantages = () => {
               
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-tenchat-red/20 flex items-center justify-center mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-truckprice-red/20 flex items-center justify-center mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 5L4.5 8.5L11 1.5" stroke="#FF0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -145,7 +144,7 @@ const PlatformAdvantages = () => {
                   <span className="text-white/80">Регистрация и подключение бесплатно</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-tenchat-red/20 flex items-center justify-center mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-truckprice-red/20 flex items-center justify-center mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 5L4.5 8.5L11 1.5" stroke="#FF0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -153,7 +152,7 @@ const PlatformAdvantages = () => {
                   <span className="text-white/80">Высокие комиссии и прозрачные условия</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-tenchat-red/20 flex items-center justify-center mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-truckprice-red/20 flex items-center justify-center mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 5L4.5 8.5L11 1.5" stroke="#FF0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -161,7 +160,7 @@ const PlatformAdvantages = () => {
                   <span className="text-white/80">Персональный менеджер и техническая поддержка</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-tenchat-red/20 flex items-center justify-center mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-truckprice-red/20 flex items-center justify-center mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 5L4.5 8.5L11 1.5" stroke="#FF0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>

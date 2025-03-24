@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="relative z-10">
           <div className="text-2xl font-bold text-white">
-            <span className="text-tenchat-red font-display">Truck</span>-Price
+            <span className="text-truckprice-red font-display">Truck</span>-Price
           </div>
         </a>
 
