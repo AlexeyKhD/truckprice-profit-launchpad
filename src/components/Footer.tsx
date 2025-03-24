@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="text-2xl font-bold text-white mb-4">
-              <span className="text-tenchat-red font-display">Ten</span>
-              <span className="font-display">Chat</span>
+              <span className="text-tenchat-red font-display">Truck</span>
+              <span className="font-display">Price</span>
             </div>
             <p className="text-white/60 max-w-xs">Ведущая платформа для агентов и брокеров в сфере продаж коммерческого транспорта</p>
           </div>
