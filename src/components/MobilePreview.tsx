@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
 const MobilePreview = () => {
@@ -111,14 +112,14 @@ const MobilePreview = () => {
         </div>
 
         {/* Floating Notifications */}
-        <div className="app-notification top-20 -right-20 z-20" style={{
+        <div className="app-notification top-20 right-2 z-20" style={{
         "--delay": "0.3"
       } as React.CSSProperties}>
           <DollarSign size={12} className="text-tenchat-green" />
           <span>Новый платеж +48 000 ₽</span>
         </div>
         
-        <div className="app-notification bottom-32 -left-24 z-20" style={{
+        <div className="app-notification bottom-32 left-2 z-20" style={{
         "--delay": "1.5"
       } as React.CSSProperties}>
           <User size={12} className="text-tenchat-red" />
