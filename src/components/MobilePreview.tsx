@@ -117,12 +117,12 @@ const MobilePreview = () => {
         {/* Floating Notifications */}
         <div style={{
         "--delay": "0.3"
-      } as React.CSSProperties} className="app-notification top-20 -right-[70%] z-20">
+      } as React.CSSProperties} className="app-notification top-20 -right-[70%] z-30 translate-x-[40%]">
           <DollarSign size={12} className="text-tenchat-green" />
           <span>Новый платеж +48 000 ₽</span>
         </div>
         
-        <div className="app-notification bottom-32 -left-[70%] z-20" style={{
+        <div className="app-notification bottom-32 -left-[70%] z-30 translate-x-[-40%]" style={{
         "--delay": "1.5"
       } as React.CSSProperties}>
           <User size={12} className="text-tenchat-red" />
