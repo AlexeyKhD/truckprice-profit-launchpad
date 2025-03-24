@@ -1,5 +1,8 @@
+
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+
 const MobilePreview = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState({
@@ -7,6 +10,8 @@ const MobilePreview = () => {
     deals: 0,
     clients: 0
   });
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
     setIsVisible(true);
     const timer = setTimeout(() => {
@@ -21,6 +26,7 @@ const MobilePreview = () => {
     }, 500);
     return () => clearTimeout(timer);
   }, []);
+  
   return <div className="relative w-full overflow-visible flex justify-center">
       <div className={`app-mockup w-72 h-[600px] bg-black border-[14px] border-black rounded-[40px] relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}>
         {/* Phone details */}
@@ -113,20 +119,25 @@ const MobilePreview = () => {
         </div>
       </div>
 
-      {/* Floating Notifications - Fixed position with absolute positioning */}
-      <div style={{
-      "--delay": "0.3"
-    } as React.CSSProperties} className="absolute top-20 right-0 translate-x-[30%] z-30 app-notification my-[44px] mx-[129px]">
-        <DollarSign size={12} className="text-tenchat-green" />
-        <span>Новый платеж +48 000 ₽</span>
-      </div>
-      
-      <div style={{
-      "--delay": "1.5"
-    } as React.CSSProperties} className="absolute bottom-32 left-0 translate-x-[-30%] z-30 app-notification my-[38px] mx-[98px]">
-        <User size={12} className="text-tenchat-red" />
-        <span>Новый клиент привлечен</span>
-      </div>
+      {/* Floating Notifications - Fixed position with absolute positioning - hidden on mobile */}
+      {!isMobile && (
+        <>
+          <div style={{
+          "--delay": "0.3"
+        } as React.CSSProperties} className="absolute top-20 right-0 translate-x-[30%] z-30 app-notification my-[44px] mx-[129px]">
+            <DollarSign size={12} className="text-tenchat-green" />
+            <span>Новый платеж +48 000 ₽</span>
+          </div>
+          
+          <div style={{
+          "--delay": "1.5"
+        } as React.CSSProperties} className="absolute bottom-32 left-0 translate-x-[-30%] z-30 app-notification my-[38px] mx-[98px]">
+            <User size={12} className="text-tenchat-red" />
+            <span>Новый клиент привлечен</span>
+          </div>
+        </>
+      )}
     </div>;
 };
+
 export default MobilePreview;
