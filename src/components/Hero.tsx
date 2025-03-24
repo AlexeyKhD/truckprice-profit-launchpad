@@ -61,9 +61,7 @@ const Hero = () => {
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
                   <div className="text-white font-medium">Сколково<span className="text-tenchat-red">Tech</span></div>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">Future<span className="text-tenchat-red">Pro</span></div>
-                </div>
+                
               </div>
             </div>
           </div>
