@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowUpRight, DollarSign, User, BarChart } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import logoSmall from "../assets/images/logo-small.svg";
 
 const MobilePreview = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,11 +47,12 @@ const MobilePreview = () => {
 
           {/* App Header */}
           <div className="flex items-center justify-between mb-8">
-            <div>
-              <h3 className="text-lg font-bold text-white">
-                <span className="text-truckprice-red">Truck</span>-Price
-              </h3>
-              <p className="text-xs text-white/60">Партнерская программа</p>
+            <div className="flex items-center">
+              <img src={logoSmall} alt="Truck-Price Logo" className="h-8 mr-2" />
+              <div>
+                <h3 className="text-lg font-bold text-white">Truck-Price</h3>
+                <p className="text-xs text-white/60">Партнерская программа</p>
+              </div>
             </div>
             <div className="w-8 h-8 rounded-full bg-truckprice-red/20 flex items-center justify-center">
               <User size={16} className="text-truckprice-red" />

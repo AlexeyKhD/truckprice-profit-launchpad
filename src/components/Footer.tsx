@@ -1,4 +1,6 @@
 import { ArrowUp } from "lucide-react";
+import logoImage from "../assets/images/logo.svg";
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -10,8 +12,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-white mb-4">
-              <span className="text-truckprice-red font-display">Truck</span>-Price
+            <div className="flex items-center justify-center md:justify-start mb-4">
+              <img src={logoImage} alt="Truck-Price Logo" className="h-10" />
             </div>
             <p className="text-white/60 max-w-xs">Ведущая платформа для агентов и брокеров в сфере продаж коммерческого транспорта</p>
           </div>

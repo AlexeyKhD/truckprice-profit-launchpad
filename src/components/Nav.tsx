@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui-extensions/Button";
 import { Menu, X } from "lucide-react";
+import logoImage from "../assets/images/logo.svg";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,8 +19,8 @@ const Nav = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${scrolled ? "bg-black/80 backdrop-blur-lg py-3 shadow-lg" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="relative z-10">
-          <div className="text-2xl font-bold text-white">
-            <span className="text-truckprice-red font-display">Truck</span>-Price
+          <div className="flex items-center">
+            <img src={logoImage} alt="Truck-Price Logo" className="h-10 mr-2" />
           </div>
         </a>
 

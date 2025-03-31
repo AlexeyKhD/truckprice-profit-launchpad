@@ -2,6 +2,8 @@ import { Button } from "./ui-extensions/Button";
 import MobilePreview from "./MobilePreview";
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import logoImage from "../assets/images/logo.svg";
+
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -32,8 +34,9 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center py-12 md:py-24">
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div>
-              <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
-                <span className="text-sm font-medium text-white/80">Партнерская программа <span className="text-truckprice-red">Truck-Price</span></span>
+              <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-center">
+                <img src={logoImage} alt="Truck-Price Logo" className="h-6 mr-2" />
+                <span className="text-sm font-medium text-white/80">Партнерская программа</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Станьте партнёром <span className="text-truckprice-red">Truck-Price</span>
