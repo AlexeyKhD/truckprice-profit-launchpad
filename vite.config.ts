@@ -9,6 +9,10 @@ export default defineConfig(({ mode }) => ({
   server: {
     headers: {
       'Content-Security-Policy': ''
+    },
+    cors: true,
+    hmr: {
+      clientPort: 3000
     }
   },
   plugins: [
