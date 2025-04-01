@@ -34,9 +34,9 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center py-12 md:py-24">
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div>
-              <div className="inline-block px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-center">
-                <img src={logoImage} alt="Truck-Price Logo" className="h-6 mr-2" />
-                <span className="text-sm font-medium text-white/80">Партнерская программа</span>
+              <div className="inline-block px-4 py-2 mb-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-end">
+                <img src={logoImage} alt="Truck-Price Logo" className="h-9 mr-3" />
+                <span className="text-sm font-medium text-white/80 pb-1.5">Партнерская программа</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Станьте партнёром <span className="text-truckprice-red">Truck-Price</span>
@@ -59,10 +59,10 @@ const Hero = () => {
               <p className="text-sm text-white/60 mb-3">Нам доверяют:</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">ГК<span className="text-truckprice-red">ТракАвто</span></div>
+                  <div className="text-white font-medium">ГК<span className="text-truckprice-red">Автомобильность</span></div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm px-3 py-2 rounded-md">
-                  <div className="text-white font-medium">Авто<span className="text-truckprice-red">Дилер</span></div>
+                  <div className="text-white font-medium">Skol<span className="text-truckprice-red">Tech</span></div>
                 </div>
               </div>
             </div>
